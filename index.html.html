@@ -1,34 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Menu</title>
-
-<style> 
-    
-body, html, * {
-    padding: 0;
-    margin: 0;
-    background: red;
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
 }
-  
-ul {
-    list-style: none;
-    padding: 20px;
-    }
-    
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
 </style>
-    
 </head>
 <body>
-<ul>
-<!--this page will open in a new tab-->
-    <li><a href="level1/edgar_allen_poe.html">Link 1</a></li>
-<!--these pages will open in the same tab-->
-    <li><a href="pages/index3.html">Link 2</a></li>
-    <li><a href="pages/index4.html">Link 3</a></li>
-    <li><a href="pages/index5.html">Link 4</a></li>
-    <li><a href="pages/index6.html">Link 5</a></li>
-    <li><a href="pages/index7.html">Link 6</a></li>
-</ul>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Projects
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="level1/edgar_allen_poe.html" target="blank">Dreamland1</a>
+      <a href="level1/edgar_allen_five.html"></a>
+      <a href="level1/edgar_allen_poe_four.html">Link 3</a>
+      <a href="level1/edgar_allen_poe_three.html">Link 4</a>
+      <a href="level1/edgar_allen_poe_two.html">Link 5</a>
+       <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Projects
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="dropdown">
+      <a href="level1/edgar_allen_poe.html" target="blank">Dreamland1</a>
+      <a href="level1/edgar_allen_five.html"></a>
+      <a href="level1/edgar_allen_poe_four.html">Link 3</a>
+      <a href="level1/edgar_allen_poe_three.html">Link 4</a>
+      <a href="level1/edgar_allen_poe_two.html">Link 5</a>
+    </div>
+  </div> 
+</div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var dropdown = document.getElementById("dropdown");
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+  }
+}
+</script>
 </body>
 </html>
