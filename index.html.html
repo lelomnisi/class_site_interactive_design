@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: red;
     font-family: Arial;
 }
 
@@ -22,6 +24,10 @@
     float: left;
     overflow: hidden;
 }
+.dropdown2 {
+    float: left;
+    overflow: hidden;
+}
 
 .dropdown .dropbtn {
     cursor: pointer;
@@ -32,8 +38,21 @@
     padding: 14px 16px;
     background-color: inherit;
 }
+.dropdown2 .dropbtn2 {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
 
 .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+.navbar a:hover, .dropdown2:hover .dropbtn2 {
     background-color: red;
 }
 
@@ -62,6 +81,28 @@
 .show {
     display: block;
 }
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+
+.dropdown-content2 a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+body{
+  background-color:black;
+
+}
 </style>
 </head>
 <body>
@@ -76,19 +117,22 @@
     <div class="dropdown-content" id="myDropdown">
       <a href="level1/edgar_allen_poe.html" target="blank">Dreamland1</a>
       <a href="level1/edgar_allen_five.html"></a>
-      <a href="level1/edgar_allen_poe_four.html">Link 3</a>
-      <a href="level1/edgar_allen_poe_three.html">Link 4</a>
-      <a href="level1/edgar_allen_poe_two.html">Link 5</a>
+      <a href="level1/edgar_allen_poe_four.html">Dreamland2</a>
+      <a href="level1/edgar_allen_poe_three.html">Dreamland3</a>
+      <a href="level1/edgar_allen_poe_two.html">Dreamland4</a>
        <div class="dropdown">
     <button class="dropbtn" onclick="myFunction()">Projects
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content" id="dropdown">
-      <a href="level1/edgar_allen_poe.html" target="blank">Dreamland1</a>
-      <a href="level1/edgar_allen_five.html"></a>
-      <a href="level1/edgar_allen_poe_four.html">Link 3</a>
-      <a href="level1/edgar_allen_poe_three.html">Link 4</a>
-      <a href="level1/edgar_allen_poe_two.html">Link 5</a>
+    <div class="dropdown-content2" id="myDropdown2">
+      <a href="level2/edgar_allen_poe.html" target="blank">Dreamland1</a>
+      <a href="level2/edgar_allen_five.html"></a>
+      <a href="level2/edgar_allen_poe_four.html">Link 3</a>
+      <a href="level2/edgar_allen_poe_three.html">Link 4</a>
+      <a href="level2/edgar_allen_poe_two.html">Link 5</a>
+      <button class="dropbtn2" onclick="myFunction()">Projects
+      <i class="fa fa-caret-down"></i> 
+      </button>
     </div>
   </div> 
 </div>
@@ -118,7 +162,7 @@ window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
     var dropdown = document.getElementById("dropdown");
       if (dropdown.classList.contains('show')) {
-        dropdown.classList.remove('show');
+        dropropdown.classList.remove('show');
       }
   }
 }

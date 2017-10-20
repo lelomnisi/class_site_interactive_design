@@ -1,25 +1,46 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Malevich's Boxes</title>
-<link rel="stylesheet" href="css/main.css" type="text/css" />
-</head>
-<style> 
+<title>edgar allen poe</title>
+<style>
+.springy-text {
+  color: darkslateblue;
+  animation-name: springy-text;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-fill-mode: backwards;
+}
+@keyframes springy-text {
+  0%   {
+    letter-spacing: 1.2em;
+    color: thistle;
+  }
+  100%   {
+    letter-spacing: 0.1em;
+    color: darkslateblue;
+  }
+}
 </style>
-<body>
-<a href="interactive_design/class_site_interactive_design/index.html.html" class="previous">&laquo; HOME</a>
-<a href="edgar_allen_one.html" class="previous round">&#8249;</a>
-<a href="edgar_allen_two.html" class="next round">&#8250;</a> 
-<div id="box1"><h4> By a route obscure and lonely,   
+
+<!-- Script to pause/start the animation -->
+<script>
+  function togglePlayState(newState) {
+    document.getElementById("springy").style.animationPlayState=newState;
+  }
+</script>
+
+<h3 class="springy-text" id="springy">By a route obscure and lonely,   
 Haunted by ill angels only, 
 Where an Eidolon, named NIGHT,   
 On a black throne reigns upright, 
 I have reached these lands but newly   
 From an ultimate dim Thule— 
 From a wild weird clime that lieth, sublime, 
-       Out of SPACE—Out of TIME.<h4/> 
-</div>
-<div id="box2"><h4>Bottomless vales and boundless floods,   
+       Out of SPACE—Out of TIME. 
+
+Bottomless vales and boundless floods,   
 And chasms, and caves, and Titan woods,   
 With forms that no man can discover   
 For the tears that drip all over;   
@@ -30,9 +51,9 @@ Surging, unto skies of fire;
 Lakes that endlessly outspread   
 Their lone waters—lone and dead,—   
 Their still waters—still and chilly   
-With the snows of the lolling lily.<h4/></div> 
+With the snows of the lolling lily. 
 
-<div id="box3"><h4>By the lakes that thus outspread 
+By the lakes that thus outspread 
 Their lone waters, lone and dead,— 
 Their sad waters, sad and chilly 
 With the snows of the lolling lily,— 
@@ -49,9 +70,9 @@ Sheeted Memories of the Past—
 Shrouded forms that start and sigh   
 As they pass the wanderer by—   
 White-robed forms of friends long given,   
-In agony, to the Earth—and Heaven.<h4/></div> 
+In agony, to the Earth—and Heaven. 
 
-<div id="box4"><h4>For the heart whose woes are legion   
+For the heart whose woes are legion   
 ’T is a peaceful, soothing region—   
 For the spirit that walks in shadow   
 ’T is—oh, ’t is an Eldorado! 
@@ -62,13 +83,11 @@ To the weak human eye unclosed;
 So wills its King, who hath forbid   
 The uplifting of the fring'd lid;   
 And thus the sad Soul that here passes   
-Beholds it but through darkened glasses.<h4/></div> 
+Beholds it but through darkened glasses. 
 
-<div id="box5"><h4>By a route obscure and lonely,   
+By a route obscure and lonely,   
 Haunted by ill angels only, 
 Where an Eidolon, named NIGHT, 
 On a black throne reigns upright,   
 I have wandered home but newly   
-From this ultimate dim Thule.<h4/></div>
-
-</html>
+From this ultimate dim Thule.</h3>
