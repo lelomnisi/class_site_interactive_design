@@ -1,0 +1,39 @@
+h1{
+        font-family:helvetica;
+        font-size:50px;
+        text-align:center;
+        outline:thin;
+        color:red;
+}
+h2{
+        font-family:helvetica;
+        font-weight:bold;
+        font-size:100px;
+        text-align:center;
+        color:white;
+
+}
+p{
+        font-size:30px;
+        font-family:helvetica;
+
+        letter-spacing:10px;
+        width:50px;
+        text-align:center;
+        display: inline;
+        font-color:white;
+
+        
+}
+body{
+	background:grey;
+	font-color:white;
+}
+
+div{
+	width:1px;
+	height:2px;
+	position:relative;
+	font-size:50px;
+
+}

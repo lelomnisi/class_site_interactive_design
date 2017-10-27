@@ -1,57 +1,66 @@
-@import "compass/css3";
-
-@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
-
-body {
-  background: black;
-  overflow: hidden;
-  font: 5vw/100vh "Finger Paint";
-  text-align: center;
-  color: transparent;
-  backface-visibility: hidden;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-span {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 5s 3s both;
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
 
-span:nth-child(even){
-  animation-name: smoky-mirror;
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
 }
 
-@keyframes smoky {
-  60% {
-    text-shadow: 0 0 40px whitesmoke;
-  }
-  to {
-    transform:
-      translate3d(15rem,-8rem,0)
-      rotate(-40deg)
-      skewX(70deg)
-      scale(1.5);
-    text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
-  }
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+.navbar a:hover, .dropdown2:hover .dropbtn2 {
+    background-color: red;
 }
 
-@keyframes smoky-mirror {
-  60% {
-    text-shadow: 0 0 40px whitesmoke; }
-  to {
-    transform:
-      translate3d(18rem,-8rem,0)
-      rotate(-40deg) 
-      skewX(-70deg)
-      scale(2);
-     text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
-  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-@for $item from 1 through 21 {
-  span:nth-of-type(#{$item}){ 
-    animation-delay: #{(3 + ($item/10))}s; 
-  }
-} 
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+
+.show {
+    display: block;
+}
+body{
+  background-color:black;
+  font-family:helvetica;
+  top:50%;
+  bottom:50%;
+
+}

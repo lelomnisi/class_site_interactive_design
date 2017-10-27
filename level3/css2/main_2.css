@@ -78,3 +78,37 @@ a:hover {
 .round {
     border-radius: 50%;
 } 
+p.dotted{
+    border-style: double;
+    border-width: thick;
+    border-width:1px;
+    position:left;
+}
+p.dashed{
+    border-style: double;
+    border-width: thick;
+}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+h1{
+    position:relative;
+    text-align: center;
+    font-family:helvetica,bold;
+}
+h2{
+    text-align:center;
+    font-family:helvetica;
+}
+ .center {margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;}

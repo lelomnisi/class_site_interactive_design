@@ -3,7 +3,7 @@
         height: 5px;
         background-color:clear; 
         position: absolute;
-        left: 90px;
+        left: 300px;
         top: 40px%;
   
     }
@@ -32,7 +32,7 @@
         background-color:clear;
         position: relative;
         top: 100px;
-        left:800px;
+        left:500px;
      
     } 
     #box5 {
@@ -41,7 +41,7 @@
         background-color:#434347;
         position: relative;
         top: 600px;
-        left:1000px;
+        left:900px;
   
     } 
 a {
@@ -68,3 +68,11 @@ a:hover {
 .round {
     border-radius: 50%;
 } 
+div {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color:clear;
+}

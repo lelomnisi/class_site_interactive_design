@@ -1,18 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="css/main.css" type="text/css" />
-</style>
-</head>
-<body>
-<a href="#" class="previous">&laquo; Previous</a>
-<a href="#" class="next">Next &raquo;</a>
+<title>edgar allen poe</title>
+<link rel="stylesheet" href="css4/main.css" type="text/css" />
+<style>
 
-<a href="#" class="previous round">&#8249;</a>
-<a href="#" class="next round">&#8250;</a>
-<h1>EDGEAR ALLEN POE</h1>
-<h2>DREAMLAND</h2>
-<h6 contenteditable data-heading="Piece of Cake">By a route obscure and lonely,   
+.springy-text {
+  color: darkslateblue;
+  animation-name: springy-text;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-fill-mode: backwards;
+}
+@keyframes springy-text {
+  0%   {
+    letter-spacing: 1.2em;
+    color: thistle;
+  }
+  100%   {
+    letter-spacing: 0.1em;
+    color: darkslateblue;
+  }
+}
+</style>
+
+<!-- Script to pause/start the animation -->
+<script>
+  function togglePlayState(newState) {
+    document.getElementById("springy").style.animationPlayState=newState;
+  }
+</script>
+
+<body>
+<a href="interactive_design/class_site_interactive_design/index.html.html" class="previous">&laquo; HOME</a>
+<a href="edgar_allen_poe_three.html" class="previous round">&#8249;</a>
+<a href="edgar_allen_poe_five.html" class="next round">&#8250;</a> 
+<h3 class="springy-text" id="springy">EDGAR ALLEN POE:DREAMLAND: <br><br><br><br>By a route obscure and lonely,   
 Haunted by ill angels only, 
 Where an Eidolon, named NIGHT,   
 On a black throne reigns upright, 
@@ -71,8 +96,5 @@ Haunted by ill angels only,
 Where an Eidolon, named NIGHT, 
 On a black throne reigns upright,   
 I have wandered home but newly   
-From this ultimate dim Thule.
-
-</h6>
+From this ultimate dim Thule.</h3>
 </body>
-</html>
