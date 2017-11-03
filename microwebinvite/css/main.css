@@ -66,7 +66,7 @@ div:last-of-type span {
 }
 
 
-p {
+h6 {
   font-size:12px;
   color:#FFFF00;
   outline-color:#00FF66;
@@ -108,15 +108,8 @@ section h1 {
   text-align: center;
   white-space: nowrap;
 }
-h6{
-  top:50%
-  left:50%
 
-}
-p{
-  top:80%;
 
-}
 
 #section01 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg01.jpg) center center / cover no-repeat;}
 #section02 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg02.jpg) center center / cover no-repeat;}
