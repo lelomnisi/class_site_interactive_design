@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color:green;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+.navbar a:hover, .dropdown2:hover .dropbtn2 {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+
+.show {
+    display: block;
+}
+body{
+  background-color:black;
+  font-family:helvetica;
+  top:50%;
+  bottom:50%;
+
+}
+</style>
+</head>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<body>
+<div class="navbar">
+  <a href="#home/interactive_design/index.html">catalog</a>
+  <a href="microwebinvite/index.html">Microsite</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">25 variations <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="level1/edgar_allen_poe.html" target="blank">Dreamlandlevel1(1)</a>
+      <a href="level1/edgar_allen_five.html">Dreamlandlevel(5)</a>
+      <a href="level1/edgar_allen_poe_four.html">Dreamlandlevel1(4)</a>
+      <a href="level1/edgar_allen_poe_three.html">Dreamlandlevel1(3)</a>
+      <a href="level1/edgar_allen_poe_two.html">Dreamlandlevel1(2)</a>
+      <a href="level2/edgar_allen_poe.html" target="blank">Dreamlandlevel2(1)</a>
+      <a href="level2/edgar_allen_poe_5.html">Dreamlandlevel2(5)</a>
+      <a href="level2/edgar_allen_poe_four.html">Dreamlandlevel2(4)</a>
+      <a href="level2/edgar_allen_poe_three.html">Dreamlandlevel2(3)</a>
+      <a href="level2/edgar_allen_poe_two.html">Dreamlandlevel2(3)</a>
+      <a href="level3/edgar_allen_one.html" target="blank">Dreamlandlevel3(1)</a>
+      <a href="level3/edgar_allen_five.html">Dreamlandlevel3(5)</a>
+      <a href="level3/edgar_allen_four.html">Dreamlandlevel3(4)</a>
+      <a href="level3/edgar_allen_three.html">Dreamlandlevel3(3)</a>
+      <a href="level3/edgar_allen_two.html">Dreamlandlevel3(2)</a>
+      <a href="level4/edgar_allen.html" target="blank">Dreamlandlevel4(1)</a>
+      <a href="level4/edgar_allen_five.html">Dreamlandlevel4(5)</a>
+      <a href="level4/edgar_allen_four.html">Dreamlandlevel4(4)</a>
+      <a href="level4/edgar_allen_three.html">Dreamlandlevel4(3)</a>
+      <a href="level4/edgar_allen2.html">Dreamlandlevel4(2)</a>
+      <a href="level5/edgar_allen_poe.html" target="blank">Dreamlandlevel5(1)</a>
+      <a href="level5/edgar_allen_poe_five.html">Dreamlandlevel5(5)</a>
+      <a href="level5/edgar_allen_poe_four.html">Dreamlandlevel5(4)</a>
+      <a href="level5/edgar_allen_poe_three.html">Dreamlandlevel5(3)</a>
+      <a href="level5/edgar_allen_poe_two.html">Dreamlandlevel5(2)</a>
+       <div class="dropdown">
+    </button>
+ 
+    </div>
+  </div> 
+</div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var dropdown = document.getElementById("dropdown");
+      if (dropdown.classList.contains('show')) {
+        dropropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</body>
+</html>
