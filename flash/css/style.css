@@ -134,398 +134,112 @@ h1.deepshadow {
         -o-transform: translate(0, 0);
       }
     }
-    .thumbnail1 {
-    width: 150px;
-    height: 150px;
-    margin: 50px;
-    top:20%;
-    float: right;
+  .thumbnail {
+    width: 200px;
+    height: 200px;
+    margin: 80px;
+    float:left;
+  
     overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 0px 0px #000;
+    position: relative;
+    box-shadow: 0px 0px 6px #000;
+    -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 50px;
 }
-.thumbnail1 a {
+
+
+.thumbnail a {
   text-decoration:none;
 }
-.thumbnail1 .caption1, .thumbnail1 .content1 {
+.thumbnail .caption, .thumbnail .content {
     width: 100%;
     height: 100%;
     position: absolute;
     overflow: hidden;
-    top: 50;
-    left: 50;
+    top: 0;
+    left: 0;
     background-color: rgba(0,0,0,0.7);
     opacity:0;
     -webkit-transition: all 0.2s ease-in-out;
 }
-.thumbnail1:hover .caption1 {
+.thumbnail:hover .caption {
     opacity:1; 
-    transition-delay: 0s;
+    
 }
-.thumbnail1 img {
+.thumbnail :hover{
+  transition-delay: 0s;
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.thumbnail img {
     display: block;
-    position: absolute;
-    top:80%;
-    bottom:20%;
-
-
+    position: relative;
     -webkit-transition: all 0.2s linear;
 }
-.thumbnail1 h5 {
+.thumbnail h5 {
     text-transform: uppercase;
-    color: white;
+    color: #fff;
     position: relative;
-    font-size: 1em;
-    padding-bottom:0px;
+    font-size: 1.2em;
+    padding-bottom:10px;
     margin:7%;
     opacity:0;
     border-bottom:0px solid white;
     -webkit-transition: all 0.4s ease-in 0.2s;
 }
-.thumbnail1:hover h5 {  
+.thumbnail:hover h5 {  
   -webkit-transition-delay: 0.2s ease-in 0.2s;
   opacity:1;
-}
-.thumbnail1 p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 6px;
-    position: relative;
-    color: #fff;
-    padding: 0 0%;
-    opacity:0;
-    -webkit-transition: all 0.8s ease-in 0.2s;
-}
-.thumbnail1:hover p {
-    opacity:0;
-    -webkit-transition-delay: 0.5s ease-in 0.2s;
-}
-.thumbnail2 {
-    width: 150px;
-    height: 150px;
-    margin: 50px;
-    top:10%;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0px 0px 0px #000;
-}
-.thumbnail2 a {
-  text-decoration:none;
-}
-.thumbnail2 .caption2, .thumbnail2 .content2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 50;
-    left: 50;
-    background-color: rgba(0,0,0,0.7);
-    opacity:0;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-.thumbnail2:hover .caption2 {
-    opacity:1; 
-    transition-delay: 0s;
-}
-.thumbnail2 img {
-    display: block;
-    position: absolute;
-    top:80%;
-    bottom:20%;
 
-
-    -webkit-transition: all 0.2s linear;
 }
-.thumbnail2 h5 {
-    text-transform: uppercase;
-    color: white;
-    position: relative;
-    font-size: 1.2em;
-    padding-bottom:0px;
-    margin:7%;
-    opacity:0;
-    border-bottom:1px solid white;
-    -webkit-transition: all 0.4s ease-in 0.2s;
-}
-.thumbnail2:hover h5 {  
-  -webkit-transition-delay: 0.2s ease-in 0.2s;
-  opacity:1;
-}
-.thumbnail2 p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 6px;
-    position: relative;
-    color: #fff;
-    padding: 0 0%;
-    opacity:0;
-    -webkit-transition: all 0.8s ease-in 0.2s;
-}
-.thumbnail2:hover p {
-    opacity:0;
-    -webkit-transition-delay: 0.5s ease-in 0.2s;
-}
-
- 
- .thumbnail3 {
-    width: 150px;
-    height: 150px;
-    margin: 50px;
-    top:10%;
-    float: right;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 0px 0px #000;
-}
-.thumbnail3 a {
-  text-decoration:none;
-}
-.thumbnail3 .caption3, .thumbnail3 .content3 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.7);
-    opacity:0;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-.thumbnail3:hover .caption3 {
-    opacity:1; 
-    transition-delay: 0s;
-}
-.thumbnail3 img {
-    display: block;
-    position: absolute;
-    top:80%;
-    bottom:20%;
-
-
-    -webkit-transition: all 0.2s linear;
-}
-.thumbnail3 h5 {
-    text-transform: uppercase;
-    color: white;
-    position: relative;
-    font-size: 1.2em;
-    padding-bottom:0px;
-    margin:7%;
-    opacity:0;
-    border-bottom:1px solid white;
-    -webkit-transition: all 0.4s ease-in 0.2s;
-}
-.thumbnail3:hover h5 {  
-  -webkit-transition-delay: 0.2s ease-in 0.2s;
-  opacity:1;
-}
-.thumbnail3 p {
+.thumbnail p {
     font-family: Georgia, serif;
     font-style: italic;
     font-size: 12px;
     position: relative;
     color: #fff;
-    padding: 0 0%;
+    padding: 0 7%;
     opacity:0;
     -webkit-transition: all 0.8s ease-in 0.2s;
 }
-.thumbnail3:hover p {
-    opacity:0;
+.thumbnail:hover p {
+    opacity:1;
     -webkit-transition-delay: 0.5s ease-in 0.2s;
 }
- .thumbnail4 {
-    width: 220px;
-    height: 220px;
-    margin: 50px;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0px 0px 0px #000;
+transition-delay: 0s;
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
 }
-.thumbnail4 a {
-  text-decoration:none;
-}
-.thumbnail4 .caption4, .thumbnail4 .content4 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 50;
-    left: 50;
-    background-color: rgba(0,0,0,0.7);
-    opacity:0;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-.thumbnail4:hover .caption4 {
-    opacity:1; 
-    transition-delay: 0s;
-}
-.thumbnail4 img {
-    display: block;
-    position: absolute;
-    top:80%;
-    bottom:20%;
-
-
-    -webkit-transition: all 0.2s linear;
-}
-.thumbnail4 h5 {
-    text-transform: uppercase;
-    color: white;
-    position: relative;
-    font-size: 1.2em;
-    padding-bottom:0px;
-    margin:7%;
-    opacity:0;
-    border-bottom:1px solid white;
-    -webkit-transition: all 0.4s ease-in 0.2s;
-}
-.thumbnail4:hover h5 {  
-  -webkit-transition-delay: 0.2s ease-in 0.2s;
-  opacity:1;
-}
-.thumbnail4 p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 12px;
-    position: relative;
-    color: #fff;
-    padding: 0 0%;
-    opacity:0;
-    -webkit-transition: all 0.8s ease-in 0.2s;
-}
-.thumbnail4:hover p {
-    opacity:0;
-    -webkit-transition-delay: 0.5s ease-in 0.2s;
-}
- 
-
- .thumbnail5 {
-    width: 150px;
-    height: 150px;
-    margin: 50px;
-    top:10%;
-    float: right;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 0px 0px #000;
-}
-.thumbnail5 a {
-  text-decoration:none;
-}
-.thumbnail5 .caption5, .thumbnail5 .content5 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.7);
-    opacity:0;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-.thumbnail5:hover .caption5 {
-    opacity:1; 
-    transition-delay: 0s;
-}
-.thumbnail5 img {
-    display: block;
-    position: absolute;
-    top:80%;
-    bottom:20%;
-
-
-    -webkit-transition: all 0.2s linear;
-}
-.thumbnail6 h5 {
-    text-transform: uppercase;
-    color: white;
-    position: relative;
-    font-size: 1.2em;
-    padding-bottom:0px;
-    margin:7%;
-    opacity:0;
-    border-bottom:1px solid white;
-    -webkit-transition: all 0.4s ease-in 0.2s;
-}
-.thumbnail6:hover h5 {  
-  -webkit-transition-delay: 0.2s ease-in 0.2s;
-  opacity:1;
-}
-.thumbnail6 p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 12px;
-    position: relative;
-    color: #fff;
-    padding: 0 0%;
-    opacity:0;
-    -webkit-transition: all 0.8s ease-in 0.2s;
-}
-.thumbnail6:hover p {
-    opacity:0;
-    -webkit-transition-delay: 0.5s ease-in 0.2s;
-}
-
- 
- .thumbnail6 {
-    width: 150px;
-    height: 150px;
-    margin: 50px;
-    top:10%;
-    float: right;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 0px 0px #000;
-}
-.thumbnail6 a {
-  text-decoration:none;
-}
-.thumbnail6 .caption6, .thumbnail6 .content6 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.7);
-    opacity:0;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-.thumbnail6:hover .caption6 {
-    opacity:1; 
-    transition-delay: 0s;
-}
-.thumbnail6 img {
-    display: block;
-    position: absolute;
-    top:80%;
-    bottom:20%;
-
-
-    -webkit-transition: all 0.2s linear;
-}
-.thumbnail6 h5 {
-    text-transform: uppercase;
-    color: white;
-    position: relative;
-    font-size: 1.2em;
-    padding-bottom:0px;
-    margin:7%;
-    opacity:0;
-    border-bottom:1px solid white;
-    -webkit-transition: all 0.4s ease-in 0.2s;
-}
-.thumbnail6:hover h5 {  
-  -webkit-transition-delay: 0.2s ease-in 0.2s;
-  opacity:1;
-}
-.thumbnail6 p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 12px;
-    position: relative;
-    color: #fff;
-    padding: 0 0%;
-    opacity:0;
-    -webkit-transition: all 0.8s ease-in 0.2s;
-}
-.thumbnail6:hover p {
-    opacity:0;
-    -webkit-transition-delay: 0.5s ease-in 0.2s;
-}
+.thumbnail:hover{
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

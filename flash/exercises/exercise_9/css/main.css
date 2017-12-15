@@ -1,0 +1,18 @@
+body{
+	background-color:white;
+}
+.grid {
+    background:blue;
+    width: 50vw;
+    height: 50vw;
+
+}
+
+.grid h1{
+	bottom:20px;
+	size:100px;
+	position:relative;
+	text-align:center;
+}
+
+
