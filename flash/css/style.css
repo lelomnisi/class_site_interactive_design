@@ -151,9 +151,9 @@ h1.deepshadow {
       }
     }
   .thumbnail {
-    width: 200px;
-    height: 200px;
-    margin: 70px;
+    width: 190px;
+    height: 190px;
+    margin: 40px;
     float:left;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
@@ -318,3 +318,61 @@ h1.deepshadow {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+
+
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float:left;
+  
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 2px #000;
+    -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 50px;
+}
+
+
+.thumbnail a {
+  text-decoration:none;
+}
+.thumbnail .caption .thumbnail .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    opacity:0;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+.thumbnail:hover .caption {
+    opacity:1; 
+    
+}
+.thumbnail :hover{
+  transition-delay: 0s;
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
